@@ -1,13 +1,13 @@
 # platonas-base-builder
 
-Building on Base – first verified contract deployed on Base Mainnet.
+Building on Base – first verified contracts deployed on Base Mainnet.
 
-## Contract Details
+## BaseHello Contract
 
-- **Network:** Base Mainnet (chainId 8453)
-- **Contract Name:** BaseHello
-- **Deployed Contract:**  
-  https://basescan.org/address/0x4B022DceDA283F9c21441AdffeF758694B59F261
+**Network:** Base Mainnet (chainId 8453)  
+**Contract Name:** BaseHello  
+**Deployed Contract:**  
+https://basescan.org/address/0x4B022DceDA283F9c21441AdffeF758694B59F261
 
 ## Source Code
 
@@ -26,3 +26,10 @@ contract BaseHello {
         message = newMessage;
     }
 }
+```
+## Platonas Token (ERC20)
+**Network:** Base Mainnet
+**Symbol:** PLATONAS
+**Total Supply:** 1,000,000 PLATONAS
+**Contract:** https://basescan.org/address/0xBD8BbB91213AfaFC8342acbb383e99C094dC1C99
+
