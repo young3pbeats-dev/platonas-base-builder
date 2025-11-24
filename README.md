@@ -33,3 +33,59 @@ contract BaseHello {
 **Total Supply:** 1,000,000 PLATONAS
 **Contract:** https://basescan.org/address/0xBD8BbB91213AfaFC8342acbb383e99C094dC1C99
 
+---
+
+## Platonas Builder Badge (Soulbound NFT)
+
+**Network:** Base Mainnet  
+**Type:** Soulbound (non-transferable)  
+**Contract Name:** PlatonasBuilderBadge  
+**Contract Address:**  
+https://basescan.org/address/0x247a8a7fB7e9517bA19746A262584A2a4652ec70
+
+### Description
+A non-transferable Soulbound NFT representing the Platonas Builder identity on Base Mainnet.  
+Minted automatically to the contract deployer and used as an on-chain proof of participation in the Platonas builder ecosystem.
+
+### Source Code
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+contract PlatonasBuilderBadge {
+    string public name = "Platonas Builder Badge";
+    string public symbol = "PLT-BADGE";
+
+    mapping(address => bool) public hasBadge;
+    address public owner;
+
+    event BadgeMinted(address indexed to);
+
+    constructor() {
+        owner = msg.sender;
+        hasBadge[msg.sender] = true;
+        emit BadgeMinted(msg.sender);
+    }
+
+    modifier onlyOwner() {
+        require(msg.sender == owner, "Not owner");
+        _;
+    }
+
+    function mint(address to) external onlyOwner {
+        require(!hasBadge[to], "Already has badge");
+        hasBadge[to] = true;
+        emit BadgeMinted(to);
+    }
+
+    // Soulbound: non trasferibile
+    function transferFrom(address, address, uint256) public pure returns (bool) {
+        revert("Soulbound: non-transferable");
+    }
+
+    function approve(address, uint256) public pure returns (bool) {
+        revert("Soulbound: non-transferable");
+    }
+}
+```
