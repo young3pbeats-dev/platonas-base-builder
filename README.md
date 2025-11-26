@@ -96,6 +96,8 @@ Contract Name: PlatoStorage
 Contract Address:
 https://basescan.org/address/0xB2d87d21783Eb0c820daafD9754E7a8e5C7334b3
 Source Code :
+
+```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.30;
 
@@ -114,3 +116,52 @@ contract PlatoStorage {
         return value;
     }
 }
+```
+
+## Plato Allowlist Contract
+
+**Network:** Base Mainnet  
+**Contract Name:** PlatoAllowlist  
+**Contract Address:**  
+https://basescan.org/address/0xDEf5F7D338cc94028C0C30240B3aB99aB1513Ec6  
+
+**Source Code**
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+contract PlatoAllowlist {
+    address public owner;
+
+    mapping(address => bool) public isAllowed;
+
+    event AddedToAllowlist(address indexed account);
+    event RemovedFromAllowlist(address indexed account);
+
+    modifier onlyOwner() {
+        require(msg.sender == owner, "Not owner");
+        _;
+    }
+
+    constructor() {
+        owner = msg.sender;
+    }
+
+    function add(address account) external onlyOwner {
+        require(!isAllowed[account], "Already allowed");
+        isAllowed[account] = true;
+        emit AddedToAllowlist(account);
+    }
+
+    function remove(address account) external onlyOwner {
+        require(isAllowed[account], "Not in allowlist");
+        isAllowed[account] = false;
+        emit RemovedFromAllowlist(account);
+    }
+
+    function check(address account) external view returns (bool) {
+        return isAllowed[account];
+    }
+}
+```
