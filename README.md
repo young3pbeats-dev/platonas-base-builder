@@ -97,7 +97,7 @@ Contract Address:
 https://basescan.org/address/0xB2d87d21783Eb0c820daafD9754E7a8e5C7334b3
 Source Code :
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.20;
+pragma solidity ^0.8.30;
 
 contract PlatoStorage {
     uint256 private value;
