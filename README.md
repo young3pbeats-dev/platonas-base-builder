@@ -91,11 +91,12 @@ contract PlatonasBuilderBadge {
 ```
 ## Plato Storage Contract
 
-Network: Base Mainnet
-Contract Name: PlatoStorage
-Contract Address:
+**Network:** Base Mainnet
+**Contract Name:** PlatoStorage
+**Contract Address:** 
 https://basescan.org/address/0xB2d87d21783Eb0c820daafD9754E7a8e5C7334b3
-Source Code :
+
+**Source Code**
 
 ```solidity
 // SPDX-License-Identifier: MIT
