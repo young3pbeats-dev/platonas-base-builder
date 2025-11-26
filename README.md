@@ -89,3 +89,28 @@ contract PlatonasBuilderBadge {
     }
 }
 ```
+## Plato Storage Contract
+
+Network: Base Mainnet
+Contract Name: PlatoStorage
+Contract Address:
+https://basescan.org/address/0xB2d87d21783Eb0c820daafD9754E7a8e5C7334b3
+Source Code :
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+contract PlatoStorage {
+    uint256 private value;
+
+    event ValueUpdated(uint256 oldValue, uint256 newValue, address updatedBy);
+
+    function setValue(uint256 newValue) public {
+        uint256 old = value;
+        value = newValue;
+        emit ValueUpdated(old, newValue, msg.sender);
+    }
+
+    function getValue() public view returns (uint256) {
+        return value;
+    }
+}
