@@ -52,7 +52,6 @@ A basic access-control contract using a boolean mapping and an owner-only modifi
 **Network:** Base Mainnet  
 **Address:** https://basescan.org/address/0x416A60fd2310f021A1143f08bFa4d80034DA0C34  
 **Type:** Habit & self-discipline tracker  
-**Status:** Pending verification on BaseScan  
 
 Tracks daily habits (exercise, meditation, no-porn, no-alcohol) and computes streaks of consecutive successful days.  
 A personal on-chain reputation tool designed to show consistency, growth, and human behavior—not sybil activity.
