@@ -166,3 +166,47 @@ contract PlatoAllowlist {
     }
 }
 ```
+## DailyChecklistTracker.sol
+
+**Network:** Base Mainnet 
+**Contract type:** Habit / self-discipline tracker with on-chain streaks
+
+### Overview
+
+`DailyChecklistTracker` is a simple smart contract that allows a user to log
+their daily self-discipline habits (exercise, meditation, no porn, no alcohol)
+and compute their current streak of consecutive "successful" days.
+
+This contract is intentionally simple and educational, showcasing:
+
+- `struct` usage for modeling daily logs
+- `mapping(address => DayLog[])` for per-user history
+- secondary `mapping` to prevent double-logging the same day
+- custom `event` for off-chain indexing
+- a basic streak calculation loop
+
+### Key Functions
+
+- `logToday(bool didExercise, bool didMeditation, bool noPorn, bool noAlcohol, string note)`
+  - Logs the current day for `msg.sender`.
+  - Reverts if the sender has already logged today.
+
+- `getLogsCount(address user) external view returns (uint256)`
+  - Returns how many daily logs a given user has.
+
+- `getLog(address user, uint256 index) external view returns (...)`
+  - Returns the full details of a specific log.
+
+- `getCurrentStreak(address user) external view returns (uint256)`
+  - Returns the current streak of consecutive successful days
+    (all flags = true, with no gaps between dateIds).
+
+### Deployment
+
+- **Network:** Base Mainnet  
+- **Address:** `0x416A60fd2310f021A1143f08bFa4d80034DA0C34`  
+- **Compiler:** `0.8.30`  
+- **License:** MIT  
+- **Explorer:** [View on BaseScan](https://basescan.org/address/0x416A60fd2310f021A1143f08bFa4d80034DA0C34#code)
+> This contract is part of my on-chain builder portfolio on Base, focused on
+> reputation, consistency, and self-discipline tracking.
