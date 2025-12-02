@@ -58,6 +58,22 @@ A personal on-chain reputation tool designed to show consistency, growth, and hu
 
 ---
 
+## 🔹 PlatonasReputation.sol 🏆  
+**Network:** Base Mainnet  
+**Address:** https://basescan.org/address/0xFe88f67499852Df3Dd21e2eF1BCfd00890F8F55b
+**Type:** On-chain reputation registry  
+
+A curated reputation system storing multiple human-driven scores:
+- builderScore (verified smart-contract work)  
+- defiScore (interaction footprint)  
+- socialScore (community participation)  
+- consistencyScore (long-term activity)  
+
+Includes curator permissions and a weighted total reputation score.  
+Built to serve as the central “identity engine” of the Platonas builder ecosystem.
+
+---
+
 ## 📘 Project Board  
 All contracts, ideas and next steps are organized in my GitHub Project:
 
@@ -71,7 +87,7 @@ All contracts, ideas and next steps are organized in my GitHub Project:
 
 ## 🎯 Purpose  
 - Build a verifiable on-chain track record on Base  
-- Learn Solidity by deploying real contracts  
-- Create personal reputation tools  
-- Explore small DeFi and identity patterns  
-- Demonstrate consistent, human activity as an early builder in the Base ecosystem
+- Learn Solidity by deploying and verifying real contracts  
+- Explore reputation systems and small DeFi patterns  
+- Document consistent human activity (not sybil behavior)  
+- Grow as an early builder within the Base ecosystem
