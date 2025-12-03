@@ -74,6 +74,22 @@ Built to serve as the central “identity engine” of the Platonas builder ecos
 
 ---
 
+## 🔹 SessionBasedChecklistTracker.sol  
+
+**Network:** Base Mainnet  
+**Address:** https://basescan.org/address/0x1a4CcEC8d5Fbe9839CAB34e256863837bA8EEFF0  
+**Type:** Session-based self-discipline tracker  
+
+A session-based version of my discipline tracker:
+- each log is a "session" (not tied to calendar days)  
+- sessionId auto-incremental per user  
+- stores per-user history with notes  
+- computes streaks of consecutive successful sessions  
+
+Built to complement `DailyChecklistTracker.sol` and provide a more flexible consistency signal on-chain.
+
+---
+
 ## 📘 Project Board  
 All contracts, ideas and next steps are organized in my GitHub Project:
 
