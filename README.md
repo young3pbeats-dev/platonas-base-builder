@@ -90,6 +90,18 @@ Built to complement `DailyChecklistTracker.sol` and provide a more flexible cons
 
 ---
 
+## 🔹 MicroAMM.sol ⚙️
+**Network:** Base Mainnet  
+**Address:** https://basescan.org/address/0x9569552C4F5c9aCdd0C2C1F5A026447659662228  
+**Type:** Educational Automated Market Maker (DeFi prototype)
+
+A minimal Automated Market Maker (AMM) designed to demonstrate core DeFi mechanics on Base Mainnet.  
+Implements a tokenA/tokenB liquidity pool using the constant product formula (x * y = k), enabling basic swaps, liquidity additions, withdrawals, and event tracking for pool operations.
+
+Purpose: Provide a clear technical showcase of AMM fundamentals within the Platonas Base Builder portfolio.
+
+---
+
 ## 📘 Project Board  
 All contracts, ideas and next steps are organized in my GitHub Project:
 
