@@ -102,6 +102,21 @@ Purpose: Provide a clear technical showcase of AMM fundamentals within the Plato
 
 ---
 
+## TimeLockedAccount (Base Mainnet)
+
+**Network:** Base Mainnet 
+**Address:** https://basescan.org/address/0xeE0Ce321398D010c8E1deB99f33966480b596bA7
+**Type:** Time-Locked Vault / Account Abstraction Utility
+
+A minimal time-locked smart contract designed to securely hold ETH and ERC20 tokens until a predefined unlock timestamp.
+Funds deposited into the contract remain inaccessible until the unlockTime condition is met, after which withdrawals can be executed by the owner or a designated beneficiary.
+
+The contract supports native ETH deposits via receive() and ERC20 deposits via explicit approval, making it suitable for delayed payouts, vesting-like mechanisms, escrow-style flows, and self-custodial time-based fund management on Base Mainnet.
+
+Purpose: Provide a clean and practical example of time-lock mechanics and secure conditional withdrawals within the Platonas Base Builder portfolio.
+
+---
+
 ## 📘 Project Board  
 All contracts, ideas and next steps are organized in my GitHub Project:
 
