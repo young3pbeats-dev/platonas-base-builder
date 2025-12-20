@@ -48,7 +48,7 @@ A basic access-control contract using a boolean mapping and an owner-only modifi
 
 ---
 
-## 🔹 DailyChecklistTracker.sol 🧠💪  
+## 🔹 DailyChecklistTracker.sol  
 **Network:** Base Mainnet  
 **Address:** https://basescan.org/address/0x416A60fd2310f021A1143f08bFa4d80034DA0C34  
 **Type:** Habit & self-discipline tracker  
@@ -58,7 +58,7 @@ A personal on-chain reputation tool designed to show consistency, growth, and hu
 
 ---
 
-## 🔹 PlatonasReputation.sol 🏆  
+## 🔹 PlatonasReputation.sol   
 **Network:** Base Mainnet  
 **Address:** https://basescan.org/address/0xFe88f67499852Df3Dd21e2eF1BCfd00890F8F55b
 **Type:** On-chain reputation registry  
@@ -102,7 +102,7 @@ Purpose: Provide a clear technical showcase of AMM fundamentals within the Plato
 
 ---
 
-## TimeLockedAccount (Base Mainnet)
+## 🔹TimeLockedAccount
 
 **Network:** Base Mainnet 
 **Address:** https://basescan.org/address/0xeE0Ce321398D010c8E1deB99f33966480b596bA7
@@ -117,7 +117,26 @@ Purpose: Provide a clean and practical example of time-lock mechanics and secure
 
 ---
 
-## 📘 Project Board  
+## 🔹 CrossChainPriceFeed.sol
+**Network:** Base Mainnet  
+**Address:** https://basescan.org/address/0x24C1c6a115Ed12Cd3Fe0d2E8e4d27525ed1A1b57  
+
+A minimal oracle-style contract that allows manual, role-based price updates to simulate cross-chain data feeds on Base Mainnet.
+
+Designed to demonstrate oracle architecture, authorization patterns, and clean data access, while remaining compatible with future integrations such as CCIP, LayerZero, or custom relayers.
+
+Core features:
+- Manual oracle-based price updates  
+- Role-based authorization for feed updates  
+- Timestamped price storage (stale data protection)  
+- Multi-asset feed support (e.g. ETH/USD, BTC/USD)  
+- Source chain context via `sourceChainId`  
+
+Reason: Oracles are the backbone of DeFi. This contract demonstrates real-world architecture beyond simple storage primitives while remaining honest about off-chain data delivery.
+
+---
+
+## Project Board  
 All contracts, ideas and next steps are organized in my GitHub Project:
 
 **➡️ Base Builder Portfolio** (Projects tab)
