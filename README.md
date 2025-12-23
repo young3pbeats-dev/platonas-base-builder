@@ -136,6 +136,20 @@ Reason: Oracles are the backbone of DeFi. This contract demonstrates real-world 
 
 ---
 
+🔹 PriceFeedRegistry.sol ⚙️
+
+**Network:** Base Mainnet
+**Address:** (https://basescan.org/address/0x9DdB82a4855B5fD73D9F12b2348E9AEb217D7FF5)
+**Type:** Advanced Oracle Registry / Price Feed Aggregator
+
+📌 Overview
+
+PriceFeedRegistry is a modular on-chain registry designed to manage multiple oracle price submissions per asset and compute a median-based aggregated price, improving resistance against manipulation and single-oracle failure.
+
+The contract is built as a core oracle primitive for future extensions such as reputation-weighted oracles, staking-based oracle incentives, and cross-chain price relayers.
+
+--- 
+
 ## Project Board  
 All contracts, ideas and next steps are organized in my GitHub Project:
 
