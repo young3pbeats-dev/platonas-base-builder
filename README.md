@@ -150,6 +150,31 @@ The contract is built as a core oracle primitive for future extensions such as r
 
 --- 
 
+🔹 UpgradeablePriceFeed.sol ⚙️
+
+**Network:**  Base Mainnet
+**Address:** https://basescan.org/address/0xd3923708eaF94bbaF48999a3dA61ab92c0E92666
+**Type:** Upgradeable Oracle / UUPS Price Feed
+
+A minimal upgradeable price feed contract built using the UUPS proxy pattern, designed to store and serve on-chain price data while preserving the ability to evolve logic over time without breaking state or integrations.
+
+The contract allows the owner to update a stored price value, emitting events for transparency, while consumers can read the latest price directly from the proxy address.
+Upgrade authorization is strictly controlled via ownership, ensuring safe and explicit upgrade paths.
+
+Core features:
+	•	UUPS upgradeable architecture (OpenZeppelin)
+	•	Proxy-based state persistence
+	•	Owner-controlled price updates
+	•	Clean separation between logic and storage
+	•	Upgrade-ready for future oracle extensions
+
+Use cases include educational oracle demos, upgradeable infrastructure primitives, and experimentation with safe smart contract upgrade patterns on Base Mainnet.
+
+Purpose: Demonstrate correct implementation of upgradeable smart contracts and oracle-style data access within the Platonas Base Builder portfolio, going beyond static deployments and highlighting real-world upgrade flows.
+
+⸻
+
+
 ## Project Board  
 All contracts, ideas and next steps are organized in my GitHub Project:
 
