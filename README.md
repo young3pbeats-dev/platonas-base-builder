@@ -174,6 +174,21 @@ Purpose: Demonstrate correct implementation of upgradeable smart contracts and o
 
 ⸻
 
+🔹 ReputationWeightedOracle.sol 
+
+**Network:**  Base Mainnet
+**Address:** https://basescan.org/address/0x42A75b786F3370Eac2F671c88377D92C80c80589
+**Type:** Reputation-Weighted Oracle / Data Aggregation Primitive
+
+📌 Overview
+
+ReputationWeightedOracle is a minimal on-chain oracle designed to aggregate values from authorized sources using reputation-based weighting.
+
+Each source contributes to the final aggregated value proportionally to its assigned reputation score, providing a simple and deterministic alternative to median-based aggregation.
+
+The contract serves as a core oracle primitive for trust-aware data feeds and future extensions such as reputation decay, slashing, or governance-controlled oracle systems.
+
+⸻
 
 ## Project Board  
 All contracts, ideas and next steps are organized in my GitHub Project:
