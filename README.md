@@ -174,6 +174,19 @@ Purpose: Demonstrate correct implementation of upgradeable smart contracts and o
 
 ⸻
 
+🔹 CrossChainOracleReceiver.sol 
+
+**Network:** Base Mainnet  
+**Address:** https://basescan.org/address/0x89E2AB9bD3106Ff3bA17588EB1cfb6Cd9A2c1Ff3  
+**Type:** Oracle Receiver / Cross-chain Architecture Demo
+
+A minimal oracle receiver designed to simulate cross-chain price updates on Base Mainnet.  
+Stores a price value with timestamp, enforces oracle-only updates, and includes stale-price protection via a configurable maxDelay.
+
+Purpose: Demonstrate clean oracle architecture, authorization patterns, and price freshness validation for portfolio-grade DeFi primitives.
+
+⸻
+
 🔹 ReputationWeightedOracle.sol 
 
 **Network:**  Base Mainnet
