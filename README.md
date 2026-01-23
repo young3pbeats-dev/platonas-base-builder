@@ -203,6 +203,19 @@ The contract serves as a core oracle primitive for trust-aware data feeds and fu
 
 ⸻
 
+🔹 MultiFeedOracle.sol
+
+**Network:**  Base Mainnet
+**Address:** https://basescan.org/address/0x937C22828BFf8c12CE4F415d233d7651160a46D9
+**Type:** Multi-Asset Oracle / Feed Aggregation Primitive
+
+📌 Overview
+
+A minimal on-chain oracle contract that stores and updates multiple asset prices within a single contract.
+Designed to demonstrate basic oracle architecture, access control, and timestamped price updates on Base Mainnet.
+
+⸻
+
 ## Project Board  
 All contracts, ideas and next steps are organized in my GitHub Project:
 
