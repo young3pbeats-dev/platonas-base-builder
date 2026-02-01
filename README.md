@@ -216,6 +216,18 @@ Designed to demonstrate basic oracle architecture, access control, and timestamp
 
 ⸻
 
+🔹 BaseTaskRegistry.sol
+
+**Network:** Base Mainnet
+**Address:** https://basescan.org/address/0x4B02F6966FDe3C68f919270aa029939Db7B65284
+**Type:** Utility Contract / On-chain Task Registry
+
+📌 Overview
+
+A minimal on-chain registry contract that allows the owner to create and store structured tasks directly on-chain.
+
+⸻
+
 ## Project Board  
 All contracts, ideas and next steps are organized in my GitHub Project:
 
