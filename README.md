@@ -226,6 +226,17 @@ Designed to demonstrate basic oracle architecture, access control, and timestamp
 
 A minimal on-chain registry contract that allows the owner to create and store structured tasks directly on-chain.
 
+---
+
+## 🔷 OnchainBuilderRegistry.sol
+
+**Network:** Base Mainnet  
+**Address:** https://basescan.org/address/0xcce82B3370E61F73A4cad61910af14425D8801e3
+
+📌 Overview
+
+A decentralized registry where builders can register projects, receive on-chain reputation and accept funding directly on Base.
+
 ⸻
 
 ## Project Board  
